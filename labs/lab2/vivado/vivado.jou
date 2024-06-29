@@ -1,0 +1,104 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Jun 29 09:59:11 2024
+# Process ID: 4839
+# Current directory: /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado
+# Command line: vivado
+# Log file: /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/vivado.log
+# Journal file: /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/vivado.jou
+# Running On        :ax
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.3 LTS
+# Processor Detail  :Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
+# CPU Frequency     :4000.553 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8185 MB
+# Swap memory       :16383 MB
+# Total Virtual     :24569 MB
+# Available Virtual :22445 MB
+#-----------------------------------------------------------
+start_gui
+create_project lab2 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2 -part xc7a35tcpg236-1
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v
+update_compile_order -fileset sources_1
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FourBitAdder.v w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FourBitAdder.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FourBitAdder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/constrs_1
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/constr.xdc w ]
+add_files -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/constr.xdc
+synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/Adder_tb.v w ]
+add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/Adder_tb.v
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+close_design
+synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+launch_simulation
+source Adder_tb.tcl
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+refresh_hw_server {localhost:3121}
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+disconnect_hw_server localhost:3121
+connect_hw_server -allow_non_jtag
+close_hw_manager
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/FourBitAdder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/FourBitAdder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/FourBitAdder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_sim

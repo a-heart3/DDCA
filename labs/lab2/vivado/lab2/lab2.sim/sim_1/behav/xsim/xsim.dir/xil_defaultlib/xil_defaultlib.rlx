@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/Adder_tb.v,1719629856,verilog,,,,Adder_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FourBitAdder.v,1719627570,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v,,FourBitAdder,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v,1719626591,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/Adder_tb.v,,FullAdder,,,,,,,,
