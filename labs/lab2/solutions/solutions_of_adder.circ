@@ -210,15 +210,18 @@
     </comp>
     <comp lib="1" loc="(330,320)" name="XOR Gate">
       <a name="facing" val="south"/>
+      <a name="label" val="m1"/>
     </comp>
     <comp lib="1" loc="(410,400)" name="AND Gate">
       <a name="facing" val="south"/>
+      <a name="label" val="m3"/>
     </comp>
     <comp lib="1" loc="(470,500)" name="OR Gate">
       <a name="facing" val="south"/>
     </comp>
     <comp lib="1" loc="(500,330)" name="AND Gate">
       <a name="facing" val="south"/>
+      <a name="label" val="m2"/>
     </comp>
     <wire from="(120,110)" to="(180,110)"/>
     <wire from="(120,170)" to="(310,170)"/>
