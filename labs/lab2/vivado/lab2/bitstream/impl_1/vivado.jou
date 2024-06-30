@@ -3,22 +3,22 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Jun 29 11:01:10 2024
-# Process ID: 13621
+# Start of session at: Sun Jun 30 21:34:38 2024
+# Process ID: 94266
 # Current directory: /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1
-# Command line: vivado -log FourBitAdder.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source FourBitAdder.tcl -notrace
-# Log file: /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/FourBitAdder.vdi
+# Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
+# Log file: /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/top.vdi
 # Journal file: /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/vivado.jou
 # Running On        :ax
 # Platform          :Ubuntu
 # Operating System  :Ubuntu 22.04.3 LTS
 # Processor Detail  :Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
-# CPU Frequency     :3999.024 MHz
+# CPU Frequency     :3172.995 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8185 MB
 # Swap memory       :16383 MB
 # Total Virtual     :24569 MB
-# Available Virtual :18696 MB
+# Available Virtual :17879 MB
 #-----------------------------------------------------------
-source FourBitAdder.tcl -notrace
+source top.tcl -notrace

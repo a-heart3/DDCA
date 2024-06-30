@@ -382,4 +382,221 @@
     <wire from="(90,220)" to="(120,220)"/>
     <wire from="(90,300)" to="(120,300)"/>
   </circuit>
+  <circuit name="Decoder_myself">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="Decoder_myself"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(100,120)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(110,120)" name="Splitter">
+      <a name="bit0" val="1"/>
+      <a name="bit1" val="0"/>
+    </comp>
+    <comp lib="0" loc="(210,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="O4"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(330,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="O3"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(440,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="O2"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="0" loc="(540,280)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="O1"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(210,240)" name="AND Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(330,240)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="1" loc="(440,240)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="negate0" val="true"/>
+    </comp>
+    <comp lib="1" loc="(540,240)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="negate0" val="true"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <wire from="(100,120)" to="(110,120)"/>
+    <wire from="(130,100)" to="(190,100)"/>
+    <wire from="(130,110)" to="(230,110)"/>
+    <wire from="(190,100)" to="(190,190)"/>
+    <wire from="(190,100)" to="(310,100)"/>
+    <wire from="(210,240)" to="(210,280)"/>
+    <wire from="(230,110)" to="(230,190)"/>
+    <wire from="(230,110)" to="(350,110)"/>
+    <wire from="(310,100)" to="(310,190)"/>
+    <wire from="(310,100)" to="(420,100)"/>
+    <wire from="(330,240)" to="(330,280)"/>
+    <wire from="(350,110)" to="(350,180)"/>
+    <wire from="(350,110)" to="(460,110)"/>
+    <wire from="(420,100)" to="(420,180)"/>
+    <wire from="(420,100)" to="(520,100)"/>
+    <wire from="(440,240)" to="(440,280)"/>
+    <wire from="(460,110)" to="(460,190)"/>
+    <wire from="(460,110)" to="(560,110)"/>
+    <wire from="(520,100)" to="(520,180)"/>
+    <wire from="(520,100)" to="(700,100)"/>
+    <wire from="(540,240)" to="(540,280)"/>
+    <wire from="(560,110)" to="(560,180)"/>
+    <wire from="(560,110)" to="(700,110)"/>
+  </circuit>
+  <circuit name="tmux_2_1">
+    <a name="appearance" val="custom"/>
+    <a name="circuit" val="tmux_2_1"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <appear>
+      <rect fill="none" height="63" stroke="#000000" width="80" x="50" y="48"/>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="61" y="60">a</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="60" y="99">b</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="90" y="100">s</text>
+      <text dominant-baseline="central" font-family="SansSerif" font-size="12" text-anchor="middle" x="110" y="81">res</text>
+      <circ-anchor facing="east" x="50" y="60"/>
+      <circ-port dir="in" pin="160,150" x="50" y="60"/>
+      <circ-port dir="in" pin="160,200" x="50" y="100"/>
+      <circ-port dir="in" pin="160,250" x="90" y="110"/>
+      <circ-port dir="out" pin="380,490" x="130" y="80"/>
+    </appear>
+    <comp lib="0" loc="(160,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+    </comp>
+    <comp lib="0" loc="(160,200)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="B"/>
+    </comp>
+    <comp lib="0" loc="(160,250)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="S"/>
+    </comp>
+    <comp lib="0" loc="(380,490)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp lib="1" loc="(300,370)" name="AND Gate">
+      <a name="facing" val="south"/>
+      <a name="negate1" val="true"/>
+    </comp>
+    <comp lib="1" loc="(380,450)" name="OR Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp lib="1" loc="(460,370)" name="AND Gate">
+      <a name="facing" val="south"/>
+    </comp>
+    <wire from="(160,150)" to="(280,150)"/>
+    <wire from="(160,200)" to="(440,200)"/>
+    <wire from="(160,250)" to="(320,250)"/>
+    <wire from="(280,150)" to="(280,320)"/>
+    <wire from="(280,150)" to="(850,150)"/>
+    <wire from="(300,370)" to="(300,380)"/>
+    <wire from="(300,380)" to="(360,380)"/>
+    <wire from="(320,250)" to="(320,310)"/>
+    <wire from="(320,250)" to="(480,250)"/>
+    <wire from="(360,380)" to="(360,400)"/>
+    <wire from="(380,450)" to="(380,490)"/>
+    <wire from="(400,380)" to="(400,400)"/>
+    <wire from="(400,380)" to="(460,380)"/>
+    <wire from="(440,200)" to="(440,320)"/>
+    <wire from="(440,200)" to="(850,200)"/>
+    <wire from="(460,370)" to="(460,380)"/>
+    <wire from="(480,250)" to="(480,320)"/>
+    <wire from="(480,250)" to="(850,250)"/>
+  </circuit>
+  <circuit name="tmux_4_1">
+    <a name="appearance" val="logisim_evolution"/>
+    <a name="circuit" val="tmux_4_1"/>
+    <a name="circuitnamedboxfixedsize" val="true"/>
+    <a name="simulationFrequency" val="1.0"/>
+    <comp lib="0" loc="(140,150)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="A"/>
+      <a name="width" val="4"/>
+    </comp>
+    <comp lib="0" loc="(140,210)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="label" val="S"/>
+      <a name="width" val="2"/>
+    </comp>
+    <comp lib="0" loc="(160,150)" name="Splitter">
+      <a name="bit0" val="3"/>
+      <a name="bit1" val="2"/>
+      <a name="bit2" val="1"/>
+      <a name="bit3" val="0"/>
+      <a name="fanout" val="4"/>
+      <a name="incoming" val="4"/>
+    </comp>
+    <comp lib="0" loc="(160,210)" name="Splitter">
+      <a name="bit0" val="1"/>
+      <a name="bit1" val="0"/>
+    </comp>
+    <comp lib="0" loc="(480,610)" name="Pin">
+      <a name="appearance" val="classic"/>
+      <a name="facing" val="north"/>
+      <a name="label" val="result"/>
+      <a name="output" val="true"/>
+    </comp>
+    <comp loc="(420,340)" name="tmux_2_1">
+      <a name="facing" val="south"/>
+      <a name="label" val="m1"/>
+    </comp>
+    <comp loc="(500,480)" name="tmux_2_1">
+      <a name="facing" val="south"/>
+    </comp>
+    <comp loc="(580,340)" name="tmux_2_1">
+      <a name="facing" val="south"/>
+      <a name="label" val="m2"/>
+    </comp>
+    <wire from="(140,150)" to="(160,150)"/>
+    <wire from="(140,210)" to="(160,210)"/>
+    <wire from="(180,110)" to="(380,110)"/>
+    <wire from="(180,120)" to="(420,120)"/>
+    <wire from="(180,130)" to="(540,130)"/>
+    <wire from="(180,140)" to="(580,140)"/>
+    <wire from="(180,190)" to="(250,190)"/>
+    <wire from="(180,200)" to="(310,200)"/>
+    <wire from="(250,190)" to="(250,520)"/>
+    <wire from="(250,190)" to="(890,190)"/>
+    <wire from="(250,520)" to="(450,520)"/>
+    <wire from="(310,200)" to="(310,380)"/>
+    <wire from="(310,200)" to="(470,200)"/>
+    <wire from="(310,380)" to="(370,380)"/>
+    <wire from="(380,110)" to="(380,340)"/>
+    <wire from="(380,110)" to="(890,110)"/>
+    <wire from="(400,420)" to="(400,450)"/>
+    <wire from="(400,450)" to="(460,450)"/>
+    <wire from="(420,120)" to="(420,340)"/>
+    <wire from="(420,120)" to="(890,120)"/>
+    <wire from="(460,450)" to="(460,480)"/>
+    <wire from="(470,200)" to="(470,380)"/>
+    <wire from="(470,200)" to="(890,200)"/>
+    <wire from="(470,380)" to="(530,380)"/>
+    <wire from="(480,560)" to="(480,610)"/>
+    <wire from="(500,450)" to="(500,480)"/>
+    <wire from="(500,450)" to="(560,450)"/>
+    <wire from="(540,130)" to="(540,340)"/>
+    <wire from="(540,130)" to="(890,130)"/>
+    <wire from="(560,420)" to="(560,450)"/>
+    <wire from="(580,140)" to="(580,340)"/>
+    <wire from="(580,140)" to="(890,140)"/>
+  </circuit>
 </project>

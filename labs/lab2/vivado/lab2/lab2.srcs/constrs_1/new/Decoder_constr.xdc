@@ -1,0 +1,7 @@
+set_property PACKAGE_PIN V2 [get_ports {deca}]
+set_property PACKAGE_PIN T3 [get_ports {decb}]
+set_property PACKAGE_PIN U15 [get_ports {deco}]
+set_property PACKAGE_PIN U14 [get_ports {deco1}]
+set_property PACKAGE_PIN V14 [get_ports {deco2}]
+set_property PACKAGE_PIN V13 [get_ports {deco3}]
+set_property IOSTANDARD LVCMOS33 [get_ports {deca decb deco deco1 deco2 deco3}]

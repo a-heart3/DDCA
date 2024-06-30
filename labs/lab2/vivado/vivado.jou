@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Jun 29 09:59:11 2024
-# Process ID: 4839
+# Start of session at: Sun Jun 30 09:46:06 2024
+# Process ID: 4074
 # Current directory: /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado
 # Command line: vivado
 # Log file: /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/vivado.log
@@ -13,92 +13,374 @@
 # Platform          :Ubuntu
 # Operating System  :Ubuntu 22.04.3 LTS
 # Processor Detail  :Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
-# CPU Frequency     :4000.553 MHz
+# CPU Frequency     :4000.015 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8185 MB
 # Swap memory       :16383 MB
 # Total Virtual     :24569 MB
-# Available Virtual :22445 MB
+# Available Virtual :22573 MB
 #-----------------------------------------------------------
 start_gui
-create_project lab2 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2 -part xc7a35tcpg236-1
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v w ]
-add_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v
+open_project /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.xpr
 update_compile_order -fileset sources_1
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FourBitAdder.v w ]
-add_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FourBitAdder.v
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/Decoder.v w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/Decoder.v
 update_compile_order -fileset sources_1
+file mkdir /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sim_1/new
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sim_1/new/Decoder_tb.v w ]
+add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sim_1/new/Decoder_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Decoder_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Decoder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
 # Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
 set_property source_mgmt_mode None [current_project]
 set_property top FourBitAdder [current_fileset]
 # Re-enabling previously disabled source management mode.
 set_property source_mgmt_mode All [current_project]
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-file mkdir /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/constrs_1
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/constr.xdc w ]
-add_files -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/constr.xdc
-synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
-synth_design -rtl -rtl_skip_mlo -name rtl_1
 close_design
 synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
 synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_design
-synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/Adder_tb.v w ]
-add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/Adder_tb.v
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
-launch_simulation
-close_design
-synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-launch_simulation
-launch_simulation
-source Adder_tb.tcl
+reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 4
 wait_on_run impl_1
 open_hw_manager
 connect_hw_server -allow_non_jtag
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-close_hw_manager
-open_hw_manager
-connect_hw_server -allow_non_jtag
-refresh_hw_server {localhost:3121}
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-close_hw_manager
-open_hw_manager
-connect_hw_server -allow_non_jtag
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-disconnect_hw_server localhost:3121
-connect_hw_server -allow_non_jtag
-close_hw_manager
-open_hw_manager
-connect_hw_server -allow_non_jtag
 open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/FourBitAdder.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.runs/impl_1/FourBitAdder.bit} [get_hw_devices xc7a35t_0]
 current_hw_device [get_hw_devices xc7a35t_0]
 refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/FourBitAdder.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.runs/impl_1/FourBitAdder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Decoder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_design
+file mkdir /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/constrs_1/new
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/constrs_1/new/Decoder_constr.xdc w ]
+add_files -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/constrs_1/new/Decoder_constr.xdc
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+set_property target_constrs_file /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/constrs_1/new/Decoder_constr.xdc [current_fileset -constrset]
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+set_property target_constrs_file /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/constr.xdc [current_fileset -constrset]
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+set_property target_constrs_file /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/constrs_1/new/Decoder_constr.xdc [current_fileset -constrset]
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property target_constrs_file /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/constr.xdc [current_fileset -constrset]
+close_design
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top FourBitAdder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+set_property target_constrs_file /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/constrs_1/new/Decoder_constr.xdc [current_fileset -constrset]
+update_compile_order -fileset sources_1
+synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property target_constrs_file /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/constr.xdc [current_fileset -constrset]
+close_design
+synth_design -top FourBitAdder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+export_ip_user_files -of_objects  [get_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/constr.xdc] -no_script -reset -force -quiet
+remove_files  -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/constr.xdc
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Decoder [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_design
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source Decoder_tb.tcl
+close_sim
+close_design
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source Decoder_tb.tcl
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.runs/impl_1/FourBitAdder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_hw_manager
+close_design
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim
+launch_simulation
+source Decoder_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+close_sim
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source Decoder_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/Decoder.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/Decoder.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/FourBitAdder_constr.xdc w ]
+add_files -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/FourBitAdder_constr.xdc
+synth_design -top Decoder -part xc7a35tcpg236-1 -lint 
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+file mkdir /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sources_1/new
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/top.v w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/top.v
+close_design
+close_sim
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/top.v] -no_script -reset -force -quiet
+remove_files  /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/top.v
+add_files -norecurse /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/top.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sim_1/new/top_tb.v w ]
+add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sim_1/new/top_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source top.tcl
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_sim
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source top_tb.tcl
+close_sim
+close_design
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source top_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/multiplexer_2_1.v w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/multiplexer_2_1.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top multiplexer_2_1 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+close_design
+close_sim
+synth_design -top multiplexer_2_1 -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_2_1.v w ]
+add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_2_1.v
+update_compile_order -fileset sim_1
+export_ip_user_files -of_objects  [get_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_2_1.v] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_2_1.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_2_1_tb.v w ]
+add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_2_1_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tmux_2_1_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+close_design
+synth_design -top multiplexer_2_1 -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+create_fileset -constrset constrs_2
+set_property constrset constrs_2 [get_runs synth_1]
+set_property constrset constrs_2 [get_runs impl_1]
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -top multiplexer_2_1 -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+close_design
+synth_design -top multiplexer_2_1 -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source tmux_2_1_tb.tcl
+close_sim
+close_design
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sources_1/new/mutx_4_1.v w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sources_1/new/mutx_4_1.v
+update_compile_order -fileset sources_1
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/tmux_4_1.v w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/tmux_4_1.v
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tmux_4_1 [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+synth_design -top tmux_4_1 -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_4_1_tb.v w ]
+add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_4_1_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top tmux_4_1_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source tmux_4_1_tb.tcl
+close_sim
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/tmux_4_1_constr.xdc w ]
+add_files -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/constr/tmux_4_1_constr.xdc
+set_property constrset constrs_1 [get_runs synth_1]
+set_property constrset constrs_1 [get_runs impl_1]
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top [current_fileset]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_design
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source top_tb.tcl
+close_sim
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+close_design
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source top_tb.tcl
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 4
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
 set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/FourBitAdder.bit} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close_design
 close_sim

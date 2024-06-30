@@ -3,6 +3,13 @@
 May 22 2024
 18:54:44
 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sim_1/new/Decoder_tb.v,1719712991,verilog,,,,Decoder_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sim_1/new/top_tb.v,1719753755,verilog,,,,top_tb,,,,,,,,
 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/Adder_tb.v,1719629856,verilog,,,,Adder_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_2_1_tb.v,1719720543,verilog,,,,tmux_2_1_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/tmux_4_1_tb.v,1719752907,verilog,,,,tmux_4_1_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/Decoder.v,1719714928,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FourBitAdder.v,,Decoder,,,,,,,,
 /home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FourBitAdder.v,1719627570,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v,,FourBitAdder,,,,,,,,
-/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v,1719626591,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/Adder_tb.v,,FullAdder,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v,1719713235,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/multiplexer_2_1.v,,FullAdder,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/multiplexer_2_1.v,1719719772,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/tmux_4_1.v,,multiplexer_2_1,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/tmux_4_1.v,1719753836,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sim_1/new/top_tb.v,,tmux_4_1,,,,,,,,

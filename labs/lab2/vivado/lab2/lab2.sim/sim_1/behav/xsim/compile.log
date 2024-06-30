@@ -1,6 +1,12 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/Decoder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Decoder
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FourBitAdder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FourBitAdder
 INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/FullAdder.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module FullAdder
-INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/sim/Adder_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module Adder_tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/multiplexer_2_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module multiplexer_2_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/vsrc/tmux_4_1.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tmux_4_1
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab2/vivado/lab2/lab2.srcs/sim_1/new/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb

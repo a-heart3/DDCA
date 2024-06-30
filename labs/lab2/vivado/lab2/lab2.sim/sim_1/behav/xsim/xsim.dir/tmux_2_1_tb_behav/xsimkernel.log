@@ -1,0 +1,7 @@
+Running: xsim.dir/tmux_2_1_tb_behav/xsimk -simmode gui -wdb tmux_2_1_tb_behav.wdb -simrunnum 0 -socket 55501
+Design successfully loaded
+Design Loading Memory Usage: 20236 KB (Peak: 20700 KB)
+Design Loading CPU Usage: 40 ms
+Simulation completed
+Simulation Memory Usage: 101972 KB (Peak: 159504 KB)
+Simulation CPU Usage: 40 ms
