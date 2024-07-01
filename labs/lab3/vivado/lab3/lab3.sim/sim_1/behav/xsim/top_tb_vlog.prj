@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"../../../../vsrc/Decoder2_4.v" \
+"../../../../vsrc/FourBitAdder.v" \
+"../../../../vsrc/FullAdder.v" \
+"../../../../vsrc/seg7.v" \
+"../../../../vsrc/top.v" \
+"../../../../sim/top_tb.v" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
