@@ -1,0 +1,8 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/lab4_exercise.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/dim_leds_tb.v,1720273727,verilog,,,,dim_leds_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Dim_led.v,1720273231,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.v,,Dim_led,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.v,1720273593,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/dim_leds_tb.v,,counter,,,,,,,,

@@ -1,0 +1,13 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/lab4.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/sim/clk_div_tb.v,1720097693,verilog,,,,clk_div_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/sim/next_state_tb.v,1720084944,verilog,,,,next_state_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/sim/output_logic_tb.v,1720086907,verilog,,,,output_logic_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/sim/top_tb.v,1720100890,verilog,,,,top_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/Next_State.v,1720241248,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/clk_div.v,,Next_State,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/clk_div.v,1720238312,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/output_logic.v,,clk_div,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/output_logic.v,1720232822,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/top.v,,output_logic,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/top.v,1720150890,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/sim/top_tb.v,,top,,,,,,,,

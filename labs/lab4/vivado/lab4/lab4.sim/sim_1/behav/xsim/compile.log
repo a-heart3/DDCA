@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/Next_State.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Next_State
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/clk_div.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module clk_div
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/output_logic.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module output_logic
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/vsrc/top.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/sim/top_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module top_tb
