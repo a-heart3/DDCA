@@ -1,0 +1,17 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../vsrc/Next_state.sv" \
+"../../../../vsrc/clk_div.sv" \
+"../../../../vsrc/counter.sv" \
+"../../../../vsrc/led50.sv" \
+"../../../../vsrc/led75.sv" \
+"../../../../vsrc/led_dim.sv" \
+"../../../../vsrc/out_logic.sv" \
+"../../../../vsrc/top.sv" \
+"../../../../sim/top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

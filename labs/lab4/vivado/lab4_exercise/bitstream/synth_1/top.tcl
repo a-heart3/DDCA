@@ -59,6 +59,7 @@ OPTRACE "synth_1" START { ROLLUP_AUTO }
 set_param checkpoint.writeSynthRtdsInDcp 1
 set_param chipscope.maxJobs 2
 set_param xicom.use_bs_reader 1
+set_param synth.incrementalSynthesisCache ./.Xil/Vivado-3552-ax/incrSyn
 set_msg_config -id {Synth 8-256} -limit 10000
 set_msg_config -id {Synth 8-638} -limit 10000
 OPTRACE "Creating in-memory project" START { }
@@ -75,11 +76,15 @@ set_property ip_output_repo /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-read_verilog -library xil_defaultlib {
-  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led50.v
-  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led75.v
-  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.v
-  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/top.v
+read_verilog -library xil_defaultlib -sv {
+  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Next_state.sv
+  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/clk_div.sv
+  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.sv
+  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led50.sv
+  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led75.sv
+  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led_dim.sv
+  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/out_logic.sv
+  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/top.sv
 }
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -95,7 +100,7 @@ set_property used_in_implementation false [get_files /home/ax/Desktop/my_work/DD
 
 set_param ips.enableIPCacheLiteLoad 1
 
-read_checkpoint -auto_incremental -incremental /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/lab4_exercise.srcs/utils_1/imports/synth_1/Dim_led.dcp
+read_checkpoint -auto_incremental -incremental /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/lab4_exercise.srcs/utils_1/imports/synth_1/top.dcp
 close [open __synthesis_is_running__ w]
 
 OPTRACE "synth_design" START { }

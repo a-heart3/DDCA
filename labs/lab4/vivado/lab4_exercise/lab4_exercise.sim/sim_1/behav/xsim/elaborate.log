@@ -1,7 +1,7 @@
 Vivado Simulator v2024.1
 Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
 Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
-Running: /home/ax/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot dim_leds_tb_behav xil_defaultlib.dim_leds_tb xil_defaultlib.glbl -log elaborate.log 
+Running: /home/ax/Xilinx/Vivado/2024.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot top_tb_behav xil_defaultlib.top_tb xil_defaultlib.glbl -log elaborate.log 
 Using 8 slave threads.
 Starting static elaboration
 Pass Through NonSizing Optimizer
@@ -9,8 +9,15 @@ Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling module xil_defaultlib.counter
-Compiling module xil_defaultlib.Dim_led
-Compiling module xil_defaultlib.dim_leds_tb
+Compiling module xil_defaultlib.Next_state
+Compiling module xil_defaultlib.clk_div
+Compiling module xil_defaultlib.out_logic
+Compiling module xil_defaultlib.counter(width=1)
+Compiling module xil_defaultlib.led50
+Compiling module xil_defaultlib.counter(width=2)
+Compiling module xil_defaultlib.led75
+Compiling module xil_defaultlib.led_dim
+Compiling module xil_defaultlib.top
+Compiling module xil_defaultlib.top_tb
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot dim_leds_tb_behav
+Built simulation snapshot top_tb_behav

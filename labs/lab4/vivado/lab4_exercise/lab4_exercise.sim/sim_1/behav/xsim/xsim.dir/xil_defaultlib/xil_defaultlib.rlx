@@ -2,7 +2,14 @@
 2020.2
 May 22 2024
 18:54:44
-/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/lab4_exercise.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
-/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/dim_leds_tb.v,1720273727,verilog,,,,dim_leds_tb,,,,,,,,
-/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Dim_led.v,1720273231,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.v,,Dim_led,,,,,,,,
-/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.v,1720273593,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/dim_leds_tb.v,,counter,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/lab4_exercise.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/counter_tb.v,1720316233,verilog,,,,counter_tb,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/top_tb.sv,1720327027,systemVerilog,,,,top_tb,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Next_state.sv,1720325257,systemVerilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/clk_div.sv,,Next_state,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/clk_div.sv,1720328508,systemVerilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.sv,,clk_div,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.sv,1720316034,systemVerilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led50.sv,,counter,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led50.sv,1720322069,systemVerilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led75.sv,,led50,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led75.sv,1720321723,systemVerilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led_dim.sv,,led75,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led_dim.sv,1720324553,systemVerilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/out_logic.sv,,led_dim,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/out_logic.sv,1720327320,systemVerilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/top.sv,,out_logic,,uvm,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/top.sv,1720326623,systemVerilog,,/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/top_tb.sv,,top,,uvm,,,,,,

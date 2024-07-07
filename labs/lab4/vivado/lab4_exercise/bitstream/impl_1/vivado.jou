@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Sat Jul  6 22:52:22 2024
-# Process ID: 534655
+# Start of session at: Sun Jul  7 13:09:17 2024
+# Process ID: 47539
 # Current directory: /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1
 # Command line: vivado -log top.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source top.tcl -notrace
 # Log file: /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.vdi
@@ -13,12 +13,12 @@
 # Platform          :Ubuntu
 # Operating System  :Ubuntu 22.04.3 LTS
 # Processor Detail  :Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
-# CPU Frequency     :3964.654 MHz
+# CPU Frequency     :3999.999 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8185 MB
 # Swap memory       :16383 MB
 # Total Virtual     :24569 MB
-# Available Virtual :17097 MB
+# Available Virtual :18526 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

@@ -3,8 +3,8 @@
 # SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
 # IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
 # SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
-# Start of session at: Fri Jul  5 09:07:12 2024
-# Process ID: 3057
+# Start of session at: Sun Jul  7 09:25:33 2024
+# Process ID: 3552
 # Current directory: /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado
 # Command line: vivado
 # Log file: /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/vivado.log
@@ -13,667 +13,171 @@
 # Platform          :Ubuntu
 # Operating System  :Ubuntu 22.04.3 LTS
 # Processor Detail  :Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
-# CPU Frequency     :3999.414 MHz
+# CPU Frequency     :3922.208 MHz
 # CPU Physical cores:4
 # CPU Logical cores :8
 # Host memory       :8185 MB
 # Swap memory       :16383 MB
 # Total Virtual     :24569 MB
-# Available Virtual :23297 MB
+# Available Virtual :23466 MB
 #-----------------------------------------------------------
 start_gui
-open_project /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/lab4.xpr
-update_compile_order -fileset sources_1
-open_run impl_1
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-close_design
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-launch_simulation
-source top_tb.tcl
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_run impl_1
-close_design
-refresh_design
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-refresh_design
-refresh_design
-refresh_design
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-refresh_design
-refresh_design
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-close_design
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-open_run synth_1 -name synth_1
-create_fileset -constrset constrs_2
-file mkdir /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/lab4.srcs/constrs_2
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/constr/next_state_test.xdc w ]
-add_files -fileset constrs_2 /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/constr/next_state_test.xdc
-add_files -fileset constrs_2 -norecurse /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/constr/next_state_test.xdc
-delete_fileset [ get_filesets constrs_2 ]
-file delete -force /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/lab4.srcs/constrs_2
-reset_run synth_1
-close_design
-refresh_design
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_sim
-launch_simulation
-source top_tb.tcl
-close_sim
-launch_simulation
-source top_tb.tcl
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-close_design
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_sim
-launch_simulation
-source top_tb.tcl
-reset_run synth_1
-launch_runs synth_1 -jobs 4
-wait_on_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-close_design
-close_sim
-launch_simulation
-source top_tb.tcl
-close_sim
-launch_simulation
-source top_tb.tcl
-close_sim
-launch_simulation
-source top_tb.tcl
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 4
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run impl_1 -prev_step 
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-close_sim
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-open_run impl_1
-launch_simulation
-source top_tb.tcl
-reset_run synth_1
-launch_runs synth_1 -jobs 8
-wait_on_run synth_1
-launch_runs impl_1 -jobs 8
-wait_on_run impl_1
-update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-current_design rtl_1
-refresh_design
-close_sim
-launch_simulation
-source top_tb.tcl
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-refresh_design
-close_sim
-launch_simulation
-source top_tb.tcl
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-refresh_design
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-refresh_design
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-close_design
-close_design
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-close_sim
-launch_simulation
-source top_tb.tcl
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-close_sim
-close_design
-synth_design -top top -part xc7a35tcpg236-1 -lint 
-synth_design -rtl -rtl_skip_mlo -name rtl_1
-launch_simulation
-source top_tb.tcl
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-close_design
-close_sim
-close_project
 create_project lab4_exercise /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise -part xc7a35tcpg236-1
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Dim_led.v w ]
-add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Dim_led.v
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.sv w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.sv
 update_compile_order -fileset sources_1
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.v w ]
-add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/counter.v
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/counter_tb.v w ]
+add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/counter_tb.v
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top counter_tb [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+synth_design -top counter -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_simulation
+source counter_tb.tcl
+close_sim
+close_design
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led50.sv w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led50.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led75.sv w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led75.sv
+update_compile_order -fileset sources_1
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/top.sv w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/top.sv
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+file mkdir /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/lab4_exercise.srcs/constrs_1
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/constr/top.xdc w ]
+add_files -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/constr/top.xdc
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Next_state.sv w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Next_state.sv
+update_compile_order -fileset sources_1
+close_design
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/tmux.v w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/tmux.v
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/out_logic.sv w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/out_logic.sv
+update_compile_order -fileset sources_1
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led_dim.sv w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/led_dim.sv
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+close_design
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/clk_div.sv w ]
+add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/clk_div.sv
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/dim_leds_tb.v w ]
-add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/dim_leds_tb.v
+close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/top_tb.sv w ]
+add_files -fileset sim_1 /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/sim/top_tb.sv
 update_compile_order -fileset sim_1
-synth_design -top Dim_led -part xc7a35tcpg236-1 -lint 
-synth_design -top Dim_led -part xc7a35tcpg236-1 -lint 
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top top_tb [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+synth_design -top top -part xc7a35tcpg236-1 -lint 
 synth_design -rtl -rtl_skip_mlo -name rtl_1
 launch_simulation
-source Dim_led.tcl
+source top_tb.tcl
 close_sim
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top dim_leds_tb [get_filesets sim_1]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
-update_compile_order -fileset sim_1
 launch_simulation
-source dim_leds_tb.tcl
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-file mkdir /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/lab4_exercise.srcs/constrs_1
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/constr/Dim_led.xdc w ]
-add_files -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/constr/Dim_led.xdc
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/Dim_led.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/Dim_led.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
 update_compile_order -fileset sources_1
-update_compile_order -fileset sources_1
-reset_run synth_1
-launch_runs impl_1 -to_step write_bitstream -jobs 8
-wait_on_run impl_1
-open_hw_manager
-connect_hw_server -allow_non_jtag
-open_hw_target
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/Dim_led.bit} [get_hw_devices xc7a35t_0]
-current_hw_device [get_hw_devices xc7a35t_0]
-refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
-set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
-set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/Dim_led.bit} [get_hw_devices xc7a35t_0]
-program_hw_devices [get_hw_devices xc7a35t_0]
-refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
-close_hw_manager
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led33.v w ]
-add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led33.v
-update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led33.v] -no_script -reset -force -quiet
-remove_files  /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led33.v
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led50.v w ]
-add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led50.v
-update_compile_order -fileset sources_1
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led75.v w ]
-add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Led75.v
-update_compile_order -fileset sources_1
+close_sim
+refresh_design
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
+close_sim
+launch_simulation
+source top_tb.tcl
+synth_design -top top -part xc7a35tcpg236-1 -lint 
 close_design
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/top.v w ]
-add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/top.v
+synth_design -rtl -rtl_skip_mlo -name rtl_1
+close_sim
+launch_simulation
+source top_tb.tcl
+close_sim
+refresh_design
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/constr/Dim_led.xdc] -no_script -reset -force -quiet
-remove_files  -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/constr/Dim_led.xdc
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/constr/top.xdc w ]
-add_files -fileset constrs_1 /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/constr/top.xdc
-# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
-set_property source_mgmt_mode None [current_project]
-set_property top top [current_fileset]
-# Re-enabling previously disabled source management mode.
-set_property source_mgmt_mode All [current_project]
 update_compile_order -fileset sources_1
 reset_run synth_1
 launch_runs impl_1 -to_step write_bitstream -jobs 8
@@ -690,7 +194,111 @@ set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_e
 program_hw_devices [get_hw_devices xc7a35t_0]
 refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 close_hw_manager
-close [ open /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Next_state.v w ]
-add_files /home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/vsrc/Next_state.v
-update_compile_order -fileset sources_1
+synth_design -top top -part xc7a35tcpg236-1 -lint 
+refresh_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+refresh_design
+launch_simulation
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+refresh_design
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+launch_simulation
+source top_tb.tcl
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstrean/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstrean/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+close_sim
+launch_simulation
+source top_tb.tcl
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+close_hw_manager
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+wait_on_run impl_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {/home/ax/Desktop/my_work/DDAC/labs/lab4/vivado/lab4_exercise/bitstream/impl_1/top.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
 close_sim
