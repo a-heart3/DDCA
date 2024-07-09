@@ -1,0 +1,440 @@
+
+*** Running vivado
+    with args -log ALU.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Jul  9 21:04:24 2024
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source ALU.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1417.598 ; gain = 0.023 ; free physical = 1416 ; free virtual = 17397
+Command: read_checkpoint -auto_incremental -incremental /home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/lab5.srcs/utils_1/imports/synth_1/ALU.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/lab5.srcs/utils_1/imports/synth_1/ALU.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top ALU -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 57761
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2130.297 ; gain = 412.660 ; free physical = 433 ; free virtual = 16415
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/vsrc/ALU.v:23]
+INFO: [Synth 8-6157] synthesizing module 'ArithOut' [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/vsrc/ArithOut.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Adder' [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/vsrc/Adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'Adder' (0#1) [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/vsrc/Adder.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ArithOut' (0#1) [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/vsrc/ArithOut.v:23]
+INFO: [Synth 8-6157] synthesizing module 'LogicOut' [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/vsrc/LogicOut.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'LogicOut' (0#1) [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/vsrc/LogicOut.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/vsrc/ALU.v:23]
+WARNING: [Synth 8-7129] Port aluop[3] in module LogicOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluop[2] in module LogicOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluop[2] in module ArithOut is either unconnected or has no load
+WARNING: [Synth 8-7129] Port aluop[0] in module ArithOut is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2206.234 ; gain = 488.598 ; free physical = 335 ; free virtual = 16320
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2221.078 ; gain = 503.441 ; free physical = 331 ; free virtual = 16316
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 2221.078 ; gain = 503.441 ; free physical = 331 ; free virtual = 16316
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2221.078 ; gain = 0.000 ; free physical = 331 ; free virtual = 16316
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc]
+INFO: [Vivado 12-2286] Implicit search of objects for pattern '*' matched to 'port' objects. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+INFO: [Vivado 12-2286] Implicit search of objects for pattern '*' matched to 'port' objects. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: To avoid ambiguous patterns, provide proper objects using get commands e.g. [get_nets xyz].
+WARNING: [Constraints 18-402] set_max_delay: 'result[0]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[10]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[11]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[12]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[13]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[14]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[15]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[16]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[17]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[18]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[19]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[1]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[20]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[21]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[22]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[23]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[24]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[25]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[26]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[27]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[28]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[29]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[2]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[30]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[31]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[3]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[4]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[5]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[6]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[7]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[8]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-402] set_max_delay: 'result[9]' is not a valid startpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid start point is a main or generated clock pin or port, a clock pin of a sequential cell, or a primary input or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[0]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[10]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[11]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[12]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[13]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[14]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[15]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[16]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[17]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[18]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[19]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[1]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[20]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[21]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[22]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[23]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[24]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[25]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[26]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[27]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[28]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[29]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[2]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[30]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[31]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[3]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[4]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[5]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[6]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[7]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[8]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'A[9]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[0]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[10]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[11]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[12]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[13]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[14]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[15]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[16]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[17]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[18]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[19]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[1]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[20]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[21]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[22]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[23]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[24]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[25]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[26]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[27]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[28]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[29]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[2]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[30]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[31]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[3]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[4]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[5]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[6]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[7]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[8]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'B[9]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'aluop[0]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'aluop[1]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'aluop[2]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+WARNING: [Constraints 18-401] set_max_delay: 'aluop[3]' is not a valid endpoint. [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc:1]
+Resolution: A valid end point is a data pin of a sequential cell or a primary output or inout port. Please validate that all the objects returned by your query belong to this list.
+Finished Parsing XDC File [/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/constr/time.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2337.828 ; gain = 0.000 ; free physical = 323 ; free virtual = 16307
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2337.828 ; gain = 0.000 ; free physical = 323 ; free virtual = 16307
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2337.828 ; gain = 620.191 ; free physical = 322 ; free virtual = 16306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 322 ; free virtual = 16306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 322 ; free virtual = 16306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 320 ; free virtual = 16306
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input   32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input   32 Bit        Muxes := 3     
+	   4 Input   32 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 298 ; free virtual = 16287
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 297 ; free virtual = 16286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 297 ; free virtual = 16286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 297 ; free virtual = 16286
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 295 ; free virtual = 16285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 295 ; free virtual = 16285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 295 ; free virtual = 16285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 295 ; free virtual = 16285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 295 ; free virtual = 16285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 295 ; free virtual = 16285
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     8|
+|2     |LUT3   |    32|
+|3     |LUT4   |    31|
+|4     |LUT5   |    31|
+|5     |LUT6   |     1|
+|6     |IBUF   |    68|
+|7     |OBUF   |    32|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2345.832 ; gain = 628.195 ; free physical = 295 ; free virtual = 16285
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 2345.832 ; gain = 511.445 ; free physical = 295 ; free virtual = 16285
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2345.840 ; gain = 628.195 ; free physical = 295 ; free virtual = 16285
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2345.840 ; gain = 0.000 ; free physical = 295 ; free virtual = 16285
+INFO: [Netlist 29-17] Analyzing 8 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2345.840 ; gain = 0.000 ; free physical = 595 ; free virtual = 16584
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 3bf11ae6
+INFO: [Common 17-83] Releasing license: Synthesis
+31 Infos, 105 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:24 . Memory (MB): peak = 2345.840 ; gain = 928.242 ; free physical = 595 ; free virtual = 16584
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1858.976; main = 1545.957; forked = 393.507
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3379.121; main = 2345.836; forked = 1041.289
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2369.844 ; gain = 0.000 ; free physical = 595 ; free virtual = 16584
+INFO: [Common 17-1381] The checkpoint '/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/bitstream/synth_1/ALU.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file ALU_utilization_synth.rpt -pb ALU_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jul  9 21:04:57 2024...

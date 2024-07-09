@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/vsrc/Adder.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/sim/Adder_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Adder_tb

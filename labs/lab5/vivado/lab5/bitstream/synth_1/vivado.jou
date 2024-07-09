@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:36:09 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Jul  9 21:04:24 2024
+# Process ID: 57739
+# Current directory: /home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/bitstream/synth_1
+# Command line: vivado -log ALU.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ALU.tcl
+# Log file: /home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/bitstream/synth_1/ALU.vds
+# Journal file: /home/ax/Desktop/my_work/DDAC/labs/lab5/vivado/lab5/bitstream/synth_1/vivado.jou
+# Running On        :ax
+# Platform          :Ubuntu
+# Operating System  :Ubuntu 22.04.3 LTS
+# Processor Detail  :Intel(R) Core(TM) i5-8300H CPU @ 2.30GHz
+# CPU Frequency     :4000.042 MHz
+# CPU Physical cores:4
+# CPU Logical cores :8
+# Host memory       :8185 MB
+# Swap memory       :16383 MB
+# Total Virtual     :24569 MB
+# Available Virtual :18616 MB
+#-----------------------------------------------------------
+source ALU.tcl -notrace
