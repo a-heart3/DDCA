@@ -1,0 +1,11 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6/lab6.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/ALU.v,1720964534,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/Adder.v,,ALU,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/ALU_test.v,1720968663,verilog,,,,ALU_test,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/Adder.v,1720964534,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/ArithOut.v,,Adder,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/ArithOut.v,1720964534,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/LogicOut.v,,ArithOut,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/LogicOut.v,1720964534,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/ALU_test.v,,LogicOut,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/bad_ALU.v,1720970970,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_files/ALU_test.v,,bad_ALU,,,,,,,,
