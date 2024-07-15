@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1721011492">
+  <File Type="POSTROUTE-PHYSOPT-RQS-RPT" Name="postroute_physopt_report_qor_suggestions_0.rpt"/>
+  <File Type="ROUTE-RQS-RPT" Name="route_report_qor_suggestions_0.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-RQS" Name="bad_ALU_postroute_physopted.rqs"/>
+  <File Type="ROUTE-RQS" Name="bad_ALU_routed.rqs"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="RDI-RDI" Name="bad_ALU.vdi"/>
+  <File Type="BG-DRC" Name="bad_ALU.drc"/>
+  <File Type="BG-BGN" Name="bad_ALU.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="bad_ALU.sysdef"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="bad_ALU.ltx"/>
+  <File Type="RBD_FILE" Name="bad_ALU.rbd"/>
+  <File Type="NPI_FILE" Name="bad_ALU.npi"/>
+  <File Type="RNPI_FILE" Name="bad_ALU.rnpi"/>
+  <File Type="CFI_FILE" Name="bad_ALU.cfi"/>
+  <File Type="RCFI_FILE" Name="bad_ALU.rcfi"/>
+  <File Type="PL-PDI-FILE" Name="bad_ALU_pld.pdi"/>
+  <File Type="BOOT-PDI-FILE" Name="bad_ALU_boot.pdi"/>
+  <File Type="PDI-FILE" Name="bad_ALU.pdi"/>
+  <File Type="BITSTR-MMI" Name="bad_ALU.mmi"/>
+  <File Type="BITSTR-BMM" Name="bad_ALU_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="bad_ALU.nky"/>
+  <File Type="BITSTR-RBT" Name="bad_ALU.rbt"/>
+  <File Type="BITSTR-MSK" Name="bad_ALU.msk"/>
+  <File Type="BG-BIN" Name="bad_ALU.bin"/>
+  <File Type="BG-BIT" Name="bad_ALU.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="bad_ALU_bus_skew_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="bad_ALU_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="bad_ALU_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="bad_ALU_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="bad_ALU_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="bad_ALU_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="bad_ALU_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="bad_ALU_postroute_physopt.dcp"/>
+  <File Type="ROUTE-RQS-PB" Name="bad_ALU_rqs_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="bad_ALU_bus_skew_routed.rpx"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="bad_ALU_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW" Name="bad_ALU_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="bad_ALU_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-SIMILARITY" Name="bad_ALU_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="bad_ALU_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="bad_ALU_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="bad_ALU_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="bad_ALU_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="bad_ALU_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="bad_ALU_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="bad_ALU_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="bad_ALU_power_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="bad_ALU_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="bad_ALU_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="bad_ALU_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="bad_ALU_drc_routed.rpx"/>
+  <File Type="ROUTE-DRC-PB" Name="bad_ALU_drc_routed.pb"/>
+  <File Type="ROUTE-DRC" Name="bad_ALU_drc_routed.rpt"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="bad_ALU_routed_bb.dcp"/>
+  <File Type="ROUTE-DCP" Name="bad_ALU_routed.dcp"/>
+  <File Type="ROUTE-ERROR-DCP" Name="bad_ALU_routed_error.dcp"/>
+  <File Type="PHYSOPT-TIMING" Name="bad_ALU_timing_summary_physopted.rpt"/>
+  <File Type="PHYSOPT-DRC" Name="bad_ALU_drc_physopted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="bad_ALU_physopt.dcp"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="bad_ALU_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="bad_ALU_postplace_pwropt.dcp"/>
+  <File Type="PLACE-RQA-PB" Name="bad_ALU_rqa_placed.pb"/>
+  <File Type="PLACE-TIMING" Name="bad_ALU_timing_summary_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="bad_ALU_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="bad_ALU_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="bad_ALU_control_sets_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="bad_ALU_utilization_placed.pb"/>
+  <File Type="PLACE-UTIL" Name="bad_ALU_utilization_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="bad_ALU_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-IO" Name="bad_ALU_io_placed.rpt"/>
+  <File Type="PLACE-DCP" Name="bad_ALU_placed.dcp"/>
+  <File Type="PWROPT-TIMING" Name="bad_ALU_timing_summary_pwropted.rpt"/>
+  <File Type="PWROPT-DRC" Name="bad_ALU_drc_pwropted.rpt"/>
+  <File Type="PWROPT-DCP" Name="bad_ALU_pwropt.dcp"/>
+  <File Type="OPT-RQA-PB" Name="bad_ALU_rqa_opted.pb"/>
+  <File Type="OPT-TIMING" Name="bad_ALU_timing_summary_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="bad_ALU.hwdef"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="bad_ALU_methodology_drc_opted.rpt"/>
+  <File Type="OPT-DRC" Name="bad_ALU_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="bad_ALU_opt.dcp"/>
+  <File Type="INIT-TIMING" Name="bad_ALU_timing_summary_init.rpt"/>
+  <File Type="REPORTS-TCL" Name="bad_ALU_reports.tcl"/>
+  <File Type="PA-TCL" Name="bad_ALU.tcl"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PPRDIR/../lab6_files/bad_ALU.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab6_files/Adder.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab6_files/ArithOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab6_files/LogicOut.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PPRDIR/../lab6_files/ALU.v">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="bad_ALU"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1" RelGenDir="$PGENDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1" RelGenDir="$PGENDIR/utils_1">
+    <Filter Type="Utils"/>
+    <File Path="$PSRCDIR/utils_1/imports/synth_1/bad_ALU.dcp">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedInSteps" Val="synth_1"/>
+        <Attr Name="AutoDcp" Val="1"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2024"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

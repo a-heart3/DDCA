@@ -1,0 +1,9 @@
+0.7
+2020.2
+May 22 2024
+18:54:44
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_exercise/lab6_exercise.sim/sim_1/behav/xsim/glbl.v,1708598507,verilog,,,,glbl,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_exercise/sim/lab6_ex_tb.v,1721009571,verilog,,,,lab6_ex_tb,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_exercise/vsrc/Next_State.v,1721004797,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_exercise/vsrc/output_logic.v,,Next_State,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_exercise/vsrc/output_logic.v,1721004797,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_exercise/vsrc/top.v,,output_logic,,,,,,,,
+/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_exercise/vsrc/top.v,1721009830,verilog,,/home/ax/Desktop/my_work/DDAC/labs/lab6/vivado/lab6_exercise/sim/lab6_ex_tb.v,,top,,,,,,,,
